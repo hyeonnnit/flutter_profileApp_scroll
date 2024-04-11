@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:profile_app1/components/profile_buttons.dart';
+import 'package:profile_app1/components/profile_count_info.dart';
 import 'package:profile_app1/components/profile_drawer.dart';
+import 'package:profile_app1/components/profile_header.dart';
+import 'package:profile_app1/components/profile_tab.dart';
 import 'package:profile_app1/theme.dart';
 
 void main() {
@@ -27,7 +31,10 @@ class ProfilePage extends StatelessWidget {
       endDrawer: ProfileDrawer(),
       body: Column(
         children: [
-
+          ProfileHeader(),
+          ProfileCountInfo(),
+          ProfileButtons(),
+          ProfileTab(),
         ],
       ),
     );
