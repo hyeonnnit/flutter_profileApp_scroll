@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile_app1/components/profile_drawer.dart';
 import 'package:profile_app1/theme.dart';
 
 void main() {
@@ -23,6 +24,7 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      endDrawer: ProfileDrawer(),
       body: Column(
         children: [
 
