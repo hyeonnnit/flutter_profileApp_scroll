@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:profile_app1/components/profile_buttons.dart';
 import 'package:profile_app1/components/profile_count_info.dart';
@@ -31,12 +32,19 @@ class ProfilePage extends StatelessWidget {
       endDrawer: ProfileDrawer(),
       body: Column(
         children: [
+          SizedBox(height: 20),
           ProfileHeader(),
+          SizedBox(height: 20),
           ProfileCountInfo(),
+          SizedBox(height: 20),
           ProfileButtons(),
-          ProfileTab(),
+          
+          Expanded(child: ProfileTab()),
         ],
       ),
     );
+  }
+  AppBar _buildProfileAppBar(){
+    return AppBar();
   }
 }
