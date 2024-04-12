@@ -35,7 +35,7 @@ class ProfileButtons extends StatelessWidget {
   Widget _buildMessageButton(){
     return InkWell(
       onTap: (){
-        print("Message 버튼 클릭됨d");
+        print("Message 버튼 클릭됨");
       },
       child: Container(
         alignment: Alignment.center,
